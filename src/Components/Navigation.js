@@ -43,23 +43,24 @@ const NavigationStyle = styled.div`
         width: 100%;
         border-bottom: 1px solid var(--border-color);
         text-align : center;
-        padding : 2rem ;
+        padding : 1rem 5px;
         
         img{
             width: 100%;
             border-radius: 50%;
             border: 8px solid var(--border-color);
-            font-size: 1rem;
+            
         }
     }
 
     .nav-items{
         width : 100%;
         text-align : center;
-
+        margin-bottom : 10rem;
+        margin-top: 1rem;
         .active-class{
             background-color: var(--primary-color);
-            margin: 2px 0px;
+            margin: 1px 0px;
         }
 
         li{
@@ -69,7 +70,7 @@ const NavigationStyle = styled.div`
                 padding: .2rem;
                 position: relative;
                 z-index: 10;
-                
+                font-size: 1.5rem;
                 &:hover{
                     cursor: pointer;        
                 }
@@ -98,8 +99,8 @@ const NavigationStyle = styled.div`
         border-top : 1px solid var(--border-color);
         width: 100%;
         p{
-            padding:  2rem 0;
-            font-size: 1.1rem;
+            padding:  1rem 0px;
+            font-size: .6rem;
             display: block;
             text-align: center;
         }
