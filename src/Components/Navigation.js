@@ -11,16 +11,17 @@ function Navigation() {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to='/home' activeClassName="active-class">Home</NavLink>
+                    <NavLink to='/' activeClassName="active-class" exact>Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to='/about' activeClassName="active-class">About</NavLink>
+                    <NavLink to='/works' activeClassName="active-class" exact>Works</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to='/works' activeClassName="active-class">Works</NavLink>
+                    <NavLink to='/about' activeClassName="active-class" exact>About</NavLink>
                 </li>
+
                 <li className="nav-item">
-                    <NavLink to='/contact' activeClassName="active-class">Contact</NavLink>
+                    <NavLink to='/contact' activeClassName="active-class" exact>Contact</NavLink>
                 </li>                
             </ul>
             <footer className="footer">
@@ -43,7 +44,7 @@ const NavigationStyle = styled.div`
         width: 100%;
         border-bottom: 1px solid var(--border-color);
         text-align : center;
-        padding : 1rem 5px;
+        padding : 1.5rem 1.5rem;
         
         img{
             width: 100%;
@@ -67,12 +68,15 @@ const NavigationStyle = styled.div`
             display: block;
             a{
                 display: block;
-                padding: .2rem;
+                padding: .45rem;
                 position: relative;
                 z-index: 10;
-                font-size: 1.5rem;
+                transition: all .4s ease-in-out;
+                font-weight: 600;
+                letter-spacing: 1px;
                 &:hover{
-                    cursor: pointer;        
+                    cursor: pointer;
+                    
                 }
                 &::before{
                     content: "";

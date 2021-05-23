@@ -27,17 +27,26 @@ const GlobalStyle = createGlobalStyle`
         list-style: none; 
         text-decoration : none;
         font-family: 'Nunito', sans-serif;
-        ${'' /* font-size: 1rem; */}
+        font-size: 1.1rem;
     }
 
     body{
         background-color : var(--background-dark-color);
         color : var(--font-light-color);
+        transition: all .4s ease-in-out;
     }
     a{
         font-family: inherit;
         color : inherit;
-        ${'' /* font-size: inherit; */}
+        font-size: inherit;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 4rem;
+        color: var(--white-color);
+    }
+    span{
+        color: var(--primary-color);
     }
 `;
 
