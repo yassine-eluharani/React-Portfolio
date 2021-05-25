@@ -50,6 +50,7 @@ const MainContent = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    z-index: -1;
     .line-1, .line-2, .line-3, .line-4{
       width: 1px;
       min-height: 100vh;
