@@ -20,19 +20,20 @@ function ServicesSection() {
                             title={'Web design'} 
                             paragraph={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam."}                            
                         />
-                        <ServiceCard 
-                            image={intelligence} 
-                            title={'Artificiel Inteligence'} 
-                            paragraph={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam."}                            
-                        />
-
+                       <div className="mid-card">
+                            <ServiceCard 
+                                image={intelligence} 
+                                title={'Artificiel Inteligence'} 
+                                paragraph={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam."}                            
+                            />
+                       </div>
                         <ServiceCard 
                             image={gamedev} 
                             title={'Game devolepment'} 
                             paragraph={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam."}                            
                         />
                     </div>
-                    
+                     
                 </ServicesSectionStyled>
             </InnerLayout>
         </div>
@@ -41,8 +42,12 @@ function ServicesSection() {
 
 const ServicesSectionStyled = styled.section`
     .services{
+        margin-top : 5rem;
         display: flex;
         justify-content: space-between;
+        .mid-card{
+            margin: 0 1.2rem;
+        }
     }
 `
 

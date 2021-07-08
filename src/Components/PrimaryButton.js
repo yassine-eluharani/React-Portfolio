@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function PrimaButton({title}) {
+function PrimaryButton({title}) {
     return (
         <PrimaButtonStyled>
             {title}
@@ -36,4 +36,4 @@ const PrimaButtonStyled = styled.div`
 
 `
 
-export default PrimaButton
+export default PrimaryButton
